@@ -1,40 +1,100 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Chester Pharmacy LLC</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about North Chester Pharmacy LLC, pharmacy services, prescription resources, and how to contact our team.">
+  <meta name="theme-color" content="#123f69">
+  <title>North Chester Pharmacy LLC | Community Pharmacy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="North Chester Pharmacy home">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span><strong>North Chester Pharmacy</strong><small>Personalized care, close to home</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="active" aria-current="page" href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#prescriptions">Prescriptions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <h1>North Chester Pharmacy</h1>
-        <p>Your Trusted Community Pharmacy</p>
-    </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">WELCOME TO NORTH CHESTER PHARMACY</p>
+          <h1>Your Health.<br><span>Our Priority.</span></h1>
+          <p class="lead">Friendly, personalized pharmacy care with the attention and support you deserve.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#services">Explore Our Services <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#contact">Contact Us</a>
+          </div>
+          <p class="hero-note">Your community pharmacy, here to help.</p>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustration of a pharmacy storefront with a medical cross">
+          <div class="art-circle"></div>
+          <div class="store">
+            <div class="store-sign"><span aria-hidden="true">✚</span> PHARMACY</div>
+            <div class="store-awning"></div>
+            <div class="store-front"><div class="store-window"></div><div class="store-door"><span class="door-handle"></span></div><div class="store-window"></div></div>
+          </div>
+          <span class="art-pill pill-one" aria-hidden="true">✚</span>
+          <span class="art-pill pill-two" aria-hidden="true">♥</span>
+        </div>
+      </div>
+    </section>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow center">OUR SERVICES</p>
+        <h2 class="section-heading">Care that puts you first</h2>
+        <p class="section-intro">Explore pharmacy resources and services designed to make managing your health easier.</p>
+        <div class="cards">
+          <article class="service-card"><span class="card-icon" aria-hidden="true">✚</span><h3>Prescription Services</h3><p>Find information about prescription refills, transfers, and medication support.</p><a href="#prescriptions">Learn more <span aria-hidden="true">→</span></a></article>
+          <article class="service-card"><span class="card-icon" aria-hidden="true">♡</span><h3>Pharmacy Care</h3><p>Learn how our pharmacy team can help with your everyday medication questions.</p><a href="#about">Learn more <span aria-hidden="true">→</span></a></article>
+          <article class="service-card"><span class="card-icon" aria-hidden="true">☏</span><h3>Personalized Support</h3><p>Connect with our team for information about available services and assistance.</p><a href="#contact">Get in touch <span aria-hidden="true">→</span></a></article>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <h2>Welcome to North Chester Pharmacy</h2>
-        <p>
-            Providing personalized pharmacy care
-            and convenient services for our community.
-        </p>
+    <section class="section section-soft" id="about">
+      <div class="container split">
+        <div class="about-graphic" aria-hidden="true"><span>✚</span><div>Community care<br>starts here.</div></div>
+        <div><p class="eyebrow">ABOUT OUR PHARMACY</p><h2>Healthcare with a personal touch</h2><p>At North Chester Pharmacy LLC, our goal is to make pharmacy information and support easier to access. We believe clear communication and attentive service are essential to a positive pharmacy experience.</p><p>We look forward to helping our community with pharmacy-related questions and resources.</p><a class="text-link" href="#contact">Connect with our team →</a></div>
+      </div>
+    </section>
 
-        <button id="learnMoreBtn">Explore Our Services</button>
-    </main>
+    <section class="section" id="prescriptions">
+      <div class="container">
+        <p class="eyebrow center">PRESCRIPTION RESOURCES</p><h2 class="section-heading">We're here to help</h2>
+        <div class="resource-grid">
+          <article class="resource-card"><h3>Prescription Refills</h3><p>Need a refill? Contact the pharmacy using its verified phone number. A secure online refill option may be added later.</p><a class="button button-primary" href="#contact">Contact the Pharmacy</a></article>
+          <article class="resource-card"><h3>Prescription Transfers</h3><p>Have questions about transferring a prescription? Reach out to the pharmacy for assistance and next steps.</p><a class="button button-outline" href="#contact">Contact the Pharmacy</a></article>
+        </div>
+        <p class="privacy-note">Please do not send prescription details, medical records, or insurance information through ordinary email or unsecured contact forms.</p>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 North Chester Pharmacy LLC.</p>
-    </footer>
+    <section class="section section-contact" id="contact">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">GET IN TOUCH</p><h2>We'd love to hear from you</h2><p>Contact North Chester Pharmacy LLC for general questions about pharmacy information and services.</p></div>
+        <div class="contact-panel"><h3>North Chester Pharmacy LLC</h3><p><strong>Phone:</strong> Contact number to be added</p><p><strong>Address:</strong> Pharmacy address to be added</p><p><strong>Hours:</strong> Business hours to be added</p><p class="contact-note">Contact details will be published after verification.</p></div>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/script.js"></script>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>✚ North Chester Pharmacy LLC</strong><p>Personalized care, close to home.</p></div><div><p>© <span id="year">2026</span> North Chester Pharmacy LLC. All rights reserved.</p><a href="#main">Back to top ↑</a></div></div></footer>
 </body>
 </html>
