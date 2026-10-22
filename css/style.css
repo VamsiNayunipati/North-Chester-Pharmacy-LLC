@@ -1059,3 +1059,167 @@
     }
 }
 
+
+/* RXLOCAL PATIENT PORTAL HEADER */
+
+.site-header .brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.patient-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.patient-login,
+.patient-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.patient-login {
+  background: #ffffff;
+  color: #17466f;
+}
+
+.patient-login:hover {
+  background: #e5f2ff;
+}
+
+.patient-register {
+  background: #2e9fd0;
+  color: #ffffff;
+}
+
+.patient-register:hover {
+  background: #197eaf;
+}
+
+/* DESKTOP HEADER */
+
+@media (min-width: 901px) {
+  .site-header .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 14px;
+  }
+
+  .site-header .main-nav {
+    margin-left: auto;
+    gap: 11px;
+  }
+
+  .site-header .main-nav a {
+    font-size: 12px;
+  }
+}
+
+/* MOBILE HEADER */
+
+@media (max-width: 900px) {
+  .patient-actions {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  .patient-login,
+  .patient-register {
+    flex: 1;
+    max-width: 190px;
+  }
+}
+
+
+/* PATIENT PORTAL BUTTONS */
+
+.patient-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.patient-login,
+.patient-register {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 13px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.patient-login {
+    background: #ffffff;
+    color: #17466f;
+}
+
+.patient-register {
+    background: #2e9fd0;
+    color: #ffffff;
+}
+
+.patient-login:hover {
+    background: #e5f2ff;
+}
+
+.patient-register:hover {
+    background: #197eaf;
+}
+
+/* DESKTOP HEADER */
+
+@media (min-width: 901px) {
+    .site-header .header-inner {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 14px;
+    }
+
+    .site-header .main-nav {
+        margin-left: auto;
+        gap: 11px;
+    }
+
+    .site-header .main-nav a {
+        font-size: 12px;
+    }
+}
+
+/* MOBILE HEADER */
+
+@media (max-width: 900px) {
+    .patient-actions {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 0;
+    }
+
+    .patient-login,
+    .patient-register {
+        flex: 1;
+        max-width: 190px;
+    }
+}
