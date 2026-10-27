@@ -1223,3 +1223,45 @@
         max-width: 190px;
     }
 }
+
+
+/* HERO CIRCLE WITH OFFICIAL PHARMACY LOGO */
+
+.hero-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 400px;
+}
+
+.hero-art .art-circle {
+    position: relative;
+    inset: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 380px;
+    max-width: 100%;
+    border-radius: 50%;
+    background: #c8e7f5;
+}
+
+.hero-pharmacy-logo {
+    display: block;
+    width: 78%;
+    height: 78%;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .hero-art {
+        min-height: 280px;
+    }
+
+    .hero-art .art-circle {
+        width: 260px;
+        height: 260px;
+    }
+}
