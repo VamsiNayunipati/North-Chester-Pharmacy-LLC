@@ -1,761 +1,129 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Website Maintenance | North Chester Pharmacy</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; }
 
-    <meta name="description"
-          content="North Chester Pharmacy LLC in Bakersfield, California. Personalized pharmacy care, prescription refills, transfers, insurance assistance, and medication support.">
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #edf4fa;
+      color: #17466f;
+    }
 
-    <meta name="theme-color" content="#123f69">
+    .maintenance-card {
+      max-width: 580px;
+      width: 100%;
+      padding: 48px 30px;
+      background: white;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+    }
 
-    <title>
-        North Chester Pharmacy | Personalized Pharmacy Care
-    </title>
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      background: #17466f;
+      color: white;
+      border-radius: 16px;
+      font-size: 45px;
+      font-weight: bold;
+    }
 
-    <link rel="stylesheet" href="css/style.css">
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
 
-    <script src="js/script.js" defer></script>
+    h2 {
+      font-size: 23px;
+      margin-top: 35px;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #52657a;
+    }
+
+    .phone {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 25px;
+      background: #17466f;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+
+    .address {
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    .pharmacy-logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+    }
+
+  </style>
 </head>
 
 <body>
 
-    <a class="skip-link" href="#main">
-        Skip to main content
+  <main class="maintenance-card">
+
+    <img
+    src="images/pharmacy-logo.png"
+    alt="North Chester Pharmacy Logo"
+    class="pharmacy-logo"
+>
+
+    <h1>North Chester Pharmacy</h1>
+
+    <p>Personalized care, close to home</p>
+
+    <h2>Website Under Maintenance</h2>
+
+    <p>
+      We're currently making improvements
+      to our website to serve you better.
+    </p>
+
+    <p>
+      Our pharmacy remains available
+      to assist with your prescription
+      and pharmacy needs.
+    </p>
+
+    <a class="phone" href="tel:+16613993337">
+      Call Us: (661) 399-3337
     </a>
 
-    <!-- ==================================
-         HEADER
-    =================================== -->
-
-    <header class="site-header">
-
-        <div class="container header-inner">
-
-            <!-- PHARMACY LOGO AND NAME -->
-            <a class="brand"
-               href="index.html"
-               aria-label="North Chester Pharmacy home">
-
-                <span class="brand-mark" aria-hidden="true">
-
-                    <svg viewBox="0 0 48 48"
-                         width="32"
-                         height="32">
-
-                        <path
-                            d="M18 5H30V18H43V30H30V43H18V30H5V18H18Z"
-                            fill="#17466f">
-                        </path>
-
-                    </svg>
-
-                </span>
-
-                <span>
-
-                    <strong>
-                        North Chester Pharmacy
-                    </strong>
-
-                    <small>
-                        Personalized care, close to home
-                    </small>
-
-                </span>
-
-            </a>
-
-            <!-- MOBILE MENU BUTTON -->
-            <button class="menu-toggle"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="primary-nav"
-                    aria-label="Open navigation menu">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-            <!-- MAIN NAVIGATION -->
-            <nav class="main-nav"
-                 id="primary-nav"
-                 aria-label="Main navigation">
-
-                <a href="index.html"
-                   aria-current="page">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About Us
-                </a>
-
-                <a href="services.html">
-                    Services
-                </a>
-
-                <a href="refills.html">
-                    Refills
-                </a>
-
-                <a href="transfers.html">
-                    Transfers
-                </a>
-
-                <a href="insurance.html">
-                    Insurance
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-                
-                <a href="inquiry.html">
-                    General Inquiry
-                </a>
-
-            </nav>
-
-            <!-- RXLOCAL PATIENT PORTAL -->
-            <div class="patient-actions">
-
-                <a class="patient-login"
-                   href="https://patient.rxlocal.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Patient Login through RxLocal, opens in a new tab">
-
-                    Patient Login
-
-                </a>
-
-                <a class="patient-register"
-                   href="https://patient.rxlocal.com/registration?fromlegacy=true"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Register for RxLocal, opens in a new tab">
-
-                    Register
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </header>
-
-    <!-- ==================================
-         MAIN CONTENT
-    =================================== -->
-
-    <main id="main">
-
-        <!-- ==================================
-             HERO SECTION
-        =================================== -->
-
-        <section class="hero">
-
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-
-                    <p class="eyebrow">
-                        YOUR NEIGHBORHOOD PHARMACY
-                    </p>
-
-                    <h1>
-                        Your Health.<br>
-                        Our Priority.
-                    </h1>
-
-                    <p class="hero-description">
-                        At North Chester Pharmacy,
-                        we are committed to providing
-                        personalized pharmacy care,
-                        prescription support, and
-                        friendly service to our community.
-                    </p>
-
-                    <div class="hero-actions">
-
-                        <a href="refills.html"
-                           class="button button-primary">
-                            Prescription Refills →
-                        </a>
-
-                        <a href="transfers.html"
-                           class="button button-outline">
-                            Transfer Prescriptions
-                        </a>
-
-                    </div>
-
-                    <p class="hero-note">
-                        Questions? Call
-                        <a href="tel:+16613993337">
-                            (661) 399-3337
-                        </a>
-                    </p>
-
-                </div>
-
-                <!-- PHARMACY ILLUSTRATION -->
-                <div class="hero-art" aria-hidden="true">
-
-                    <div class="art-circle"></div>
-
-                    <div class="store">
-
-                        <div class="store-sign">
-                            NORTH CHESTER PHARMACY
-                        </div>
-
-                        <div class="store-awning"></div>
-
-                        <div class="store-front">
-
-                            <div class="store-window"></div>
-
-                            <div class="store-door">
-                                <span class="door-handle"></span>
-                            </div>
-
-                            <div class="store-window"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="art-pill pill-one"></div>
-                    <div class="art-pill pill-two"></div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================
-             SERVICES
-        =================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <p class="eyebrow center">
-                    WHAT WE OFFER
-                </p>
-
-                <h2 class="section-heading">
-                    Pharmacy Care You Can Count On
-                </h2>
-
-                <p class="section-intro">
-                    Our team is here to help with
-                    your everyday pharmacy needs.
-                </p>
-
-                <div class="cards">
-
-                    <!-- PRESCRIPTION SERVICES -->
-                    <article class="service-card">
-
-                        <div class="service-icon"
-                             aria-hidden="true">
-                            💊
-                        </div>
-
-                        <h3>
-                            Prescription Services
-                        </h3>
-
-                        <p>
-                            Prescription filling,
-                            refill assistance,
-                            and medication support.
-                        </p>
-
-                        <a href="services.html">
-                            Explore Services →
-                        </a>
-
-                    </article>
-
-                    <!-- PHARMACY CARE -->
-                    <article class="service-card">
-
-                        <div class="service-icon"
-                             aria-hidden="true">
-                            🩺
-                        </div>
-
-                        <h3>
-                            Pharmacy Care
-                        </h3>
-
-                        <p>
-                            Personalized guidance
-                            and medication counseling
-                            to support your health.
-                        </p>
-
-                        <a href="about.html">
-                            About Our Pharmacy →
-                        </a>
-
-                    </article>
-
-                    <!-- INSURANCE -->
-                    <article class="service-card">
-
-                        <div class="service-icon"
-                             aria-hidden="true">
-                            🛡️
-                        </div>
-
-                        <h3>
-                            Insurance &amp; Support
-                        </h3>
-
-                        <p>
-                            Assistance with prescription
-                            coverage questions and
-                            insurance processing.
-                        </p>
-
-                        <a href="insurance.html">
-                            Insurance Information →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================
-             ABOUT US
-        =================================== -->
-
-        <section class="section section-soft">
-
-            <div class="container split">
-
-                <div class="about-graphic"
-                     aria-hidden="true">
-
-                    <span>✚</span>
-
-                </div>
-
-                <div class="about-content">
-
-                    <p class="eyebrow">
-                        ABOUT NORTH CHESTER PHARMACY
-                    </p>
-
-                    <h2>
-                        Your Community Pharmacy
-                    </h2>
-
-                    <p>
-                        North Chester Pharmacy LLC
-                        serves patients in Bakersfield,
-                        California, with a focus on
-                        personalized care and
-                        dependable pharmacy service.
-                    </p>
-
-                    <p>
-                        We believe patients deserve
-                        clear communication,
-                        helpful medication guidance,
-                        and a pharmacy team they
-                        can count on.
-                    </p>
-
-                    <a href="about.html"
-                       class="button button-primary">
-                        Learn More About Us →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================
-             PRESCRIPTION REFILLS AND TRANSFERS
-        =================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <p class="eyebrow center">
-                    PRESCRIPTION RESOURCES
-                </p>
-
-                <h2 class="section-heading">
-                    Manage Your Prescriptions
-                </h2>
-
-                <p class="section-intro">
-                    Learn how to request refills
-                    or transfer eligible prescriptions
-                    to our pharmacy.
-                </p>
-
-                <div class="resource-grid">
-
-                    <!-- REFILLS -->
-                    <article class="resource-card">
-
-                        <h3>
-                            Prescription Refills
-                        </h3>
-
-                        <p>
-                            Find information about
-                            requesting your next
-                            prescription refill.
-                        </p>
-
-                        <a href="refills.html"
-                           class="button button-primary">
-                            Refill Information →
-                        </a>
-
-                    </article>
-
-                    <!-- TRANSFERS -->
-                    <article class="resource-card">
-
-                        <h3>
-                            Prescription Transfers
-                        </h3>
-
-                        <p>
-                            Our pharmacy team can help
-                            coordinate eligible
-                            prescription transfers.
-                        </p>
-
-                        <a href="transfers.html"
-                           class="button button-outline">
-                            Transfer Information →
-                        </a>
-
-                    </article>
-
-                </div>
-
-                <p class="resource-note">
-                    For your privacy, please do not
-                    submit prescription numbers,
-                    medication details, or other
-                    sensitive health information
-                    through unsecured website
-                    forms or ordinary email.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================
-             RXLOCAL PATIENT PORTAL
-        =================================== -->
-
-        <section class="section section-soft"
-                 aria-labelledby="portal-heading">
-
-            <div class="container">
-
-                <p class="eyebrow center">
-                    ONLINE PATIENT ACCESS
-                </p>
-
-                <h2 class="section-heading"
-                    id="portal-heading">
-                    Your Pharmacy, Online
-                </h2>
-
-                <p class="section-intro">
-                    North Chester Pharmacy patients
-                    can use RxLocal to access available
-                    prescription management features
-                    and request refills through
-                    the patient portal.
-                </p>
-
-                <div class="resource-grid">
-
-                    <!-- EXISTING PATIENT -->
-                    <article class="resource-card">
-
-                        <h3>
-                            Already Have an Account?
-                        </h3>
-
-                        <p>
-                            Sign in to RxLocal to
-                            access your patient account
-                            and available prescription
-                            services.
-                        </p>
-
-                        <a class="button button-primary"
-                           href="https://patient.rxlocal.com/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Patient Login →
-                        </a>
-
-                    </article>
-
-                    <!-- NEW PATIENT -->
-                    <article class="resource-card">
-
-                        <h3>
-                            New to RxLocal?
-                        </h3>
-
-                        <p>
-                            Create an RxLocal account
-                            and follow the secure
-                            registration process
-                            to connect with your pharmacy.
-                        </p>
-
-                        <a class="button button-outline"
-                           href="https://patient.rxlocal.com/registration?fromlegacy=true"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Register →
-                        </a>
-
-                    </article>
-
-                </div>
-
-                <p class="resource-note">
-                    Patient registration and login
-                    are handled by RxLocal.
-                    Do not enter personal or
-                    prescription information
-                    directly into this website.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================
-             INSURANCE
-        =================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <p class="eyebrow center">
-                    PRESCRIPTION COVERAGE
-                </p>
-
-                <h2 class="section-heading">
-                    Insurance &amp; Prescription Benefits
-                </h2>
-
-                <p class="section-intro">
-                    Have questions about prescription
-                    insurance? Our pharmacy team can
-                    help you understand available
-                    coverage information.
-                </p>
-
-                <div class="insurance-home-card">
-
-                    <h3>
-                        Questions About Your Coverage?
-                    </h3>
-
-                    <p>
-                        Prescription coverage,
-                        copayments, and plan requirements
-                        can vary by insurance plan
-                        and medication.
-                    </p>
-
-                    <p>
-                        Contact our pharmacy to ask
-                        about insurance processing
-                        and prescription benefits.
-                        Plan participation and specific
-                        medication coverage should
-                        be confirmed before filling.
-                    </p>
-
-                    <a href="insurance.html"
-                       class="button button-primary">
-                        Learn About Insurance →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================
-             CONTACT INFORMATION
-        =================================== -->
-
-        <section class="section section-contact">
-
-            <div class="container">
-
-                <p class="eyebrow center">
-                    VISIT OUR PHARMACY
-                </p>
-
-                <h2 class="section-heading">
-                    We're Here to Help
-                </h2>
-
-                <p class="section-intro">
-                    Contact or visit North Chester
-                    Pharmacy in Bakersfield.
-                </p>
-
-                <div class="contact-grid">
-
-                    <div class="contact-panel">
-
-                        <h3>
-                            North Chester Pharmacy LLC
-                        </h3>
-
-                        <p>
-                            <strong>Address</strong>
-                        </p>
-
-                        <p>
-                            1822 N Chester Ave<br>
-                            Bakersfield, CA 93308
-                        </p>
-
-                        <p>
-                            <strong>Phone</strong>
-                        </p>
-
-                        <p>
-                            <a href="tel:+16613993337">
-                                (661) 399-3337
-                            </a>
-                        </p>
-
-                        <p>
-                            <strong>Fax</strong>
-                        </p>
-
-                        <p>
-                            (661) 399-2926
-                        </p>
-
-                        <p>
-                            <strong>Business Hours</strong>
-                        </p>
-
-                        <p>
-                            Monday – Friday:
-                            9:00 AM – 6:00 PM
-                        </p>
-
-                        <p>
-                            Saturday: Closed<br>
-                            Sunday: Closed
-                        </p>
-
-                        <a class="button button-primary"
-                           href="contact.html">
-                            Contact Our Pharmacy →
-                        </a>
-
-                        <a class="button button-outline"
-                           href="https://www.google.com/maps/search/?api=1&amp;query=1822+N+Chester+Ave%2C+Bakersfield%2C+CA+93308"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Get Directions →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- ==================================
-         FOOTER
-    =================================== -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-inner">
-
-            <div>
-
-                <strong>
-                    ✚ North Chester Pharmacy LLC
-                </strong>
-
-                <p>
-                    Personalized care, close to home.
-                </p>
-
-            </div>
-
-            <div>
-
-                <p>
-                    &copy;
-                    <span id="year">2026</span>
-                    North Chester Pharmacy LLC.
-                    All rights reserved.
-                </p>
-
-                <a href="privacy.html">
-                    Privacy Policy
-                </a>
-
-                <span aria-hidden="true"> | </span>
-
-                <a href="#main">
-                    Back to Top ↑
-                </a>
-
-            </div>
-
-        </div>
-
-    </footer>
+    <p class="address">
+      1822 N Chester Ave<br>
+      Bakersfield, CA 93308
+    </p>
+
+  </main>
 
 </body>
 </html>
