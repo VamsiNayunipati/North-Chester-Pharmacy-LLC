@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>General Inquiry | North Chester Pharmacy</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .inquiry-container {
+      max-width: 650px;
+      margin: 50px auto;
+      padding: 24px;
+    }
+
+    .inquiry-form {
+      display: grid;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .inquiry-form select,
+    .inquiry-form button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    .inquiry-form select {
+      border: 1px solid #b8c7d6;
+      background: white;
+    }
+
+    .inquiry-form button {
+      border: none;
+      background: #17466f;
+      color: white;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .inquiry-form button:hover {
+      background: #103653;
+    }
+
+    .inquiry-result {
+      margin-top: 24px;
+      padding: 20px;
+      background: #eef6fc;
+      border-radius: 10px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="inquiry-container">
+
+  <h1>General Inquiry</h1>
+
+  <p>
+    Have a question about North Chester Pharmacy?
+    Select a question below. No personal information
+    is required.
+  </p>
+
+  <form id="inquiryForm" class="inquiry-form">
+
+    <label for="question">
+      What would you like to know?
+    </label>
+
+    <select id="question" name="question" required>
+      <option value="">Select a question</option>
+      <option value="hours">
+        What are your hours of operation?
+      </option>
+      <option value="today">
+        Are you open today?
+      </option>
+      <option value="location">
+        Where is your pharmacy located?
+      </option>
+      <option value="refills">
+        How can I refill my prescription?
+      </option>
+      <option value="contact">
+        How can I contact the pharmacy?
+      </option>
+    </select>
+
+    <button type="submit">
+      Submit Inquiry
+    </button>
+
+  </form>
+
+  <section id="result"
+           class="inquiry-result"
+           aria-live="polite"
+           hidden>
+
+    <h2>Response</h2>
+    <p id="responseText"></p>
+
+  </section>
+
+  <p style="margin-top: 24px;">
+    <a href="index.html">← Back to Homepage</a>
+  </p>
+
+</main>
+
+<script>
+  const answers = {
+    hours:
+      "Our listed hours are Monday through Friday, " +
+      "9:00 AM to 6:00 PM. " +
+      "Saturday and Sunday: Closed.",
+
+    today:
+      "Our regular hours are Monday through Friday, " +
+      "9:00 AM to 6:00 PM. " +
+      "For holiday hours or unexpected closures, " +
+      "call (661) 399-3337.",
+
+    location:
+      "We are located at 1822 N Chester Ave, " +
+      "Bakersfield, CA 93308.",
+
+    refills:
+      "Visit our Refills page or use RxLocal " +
+      "to request eligible prescription refills.",
+
+    contact:
+      "Call North Chester Pharmacy at " +
+      "(661) 399-3337."
+  };
+
+  const form = document.getElementById("inquiryForm");
+  const question = document.getElementById("question");
+  const result = document.getElementById("result");
+  const responseText =
+    document.getElementById("responseText");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const selected = question.value;
+
+    if (!Object.hasOwn(answers, selected)) {
+      return;
+    }
+
+    responseText.textContent = answers[selected];
+    result.hidden = false;
+  });
+</script>
+
+</body>
+</html>
