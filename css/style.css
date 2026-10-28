@@ -1265,3 +1265,676 @@
         height: 260px;
     }
 }
+
+
+/* Reduce website font sizes by 25% */
+
+html {
+    font-size: 75%;
+}
+
+
+/* =========================================
+   COMPACT WEBSITE LAYOUT
+   Reduce excessive empty space
+   Applies to all website pages
+   ========================================= */
+
+/* General section spacing */
+.section {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+/* Homepage hero */
+.hero-grid {
+    min-height: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 28px;
+}
+
+/* Homepage logo area */
+.hero .hero-art {
+    min-height: 240px;
+    height: auto;
+}
+
+/* Homepage text spacing */
+.hero h1 {
+    margin-bottom: 12px;
+}
+
+.hero .lead,
+.hero .hero-description {
+    margin-bottom: 16px;
+}
+
+.hero-note {
+    margin-top: 12px;
+}
+
+/* Section headings */
+.eyebrow {
+    margin-bottom: 8px;
+}
+
+.section-heading {
+    margin-bottom: 8px;
+}
+
+.section-intro {
+    margin-bottom: 20px;
+}
+
+/* Service and resource cards */
+.cards,
+.services-grid,
+.refills-grid,
+.transfers-grid,
+.insurance-grid,
+.contact-grid,
+.resource-grid {
+    gap: 16px;
+}
+
+.service-card,
+.resource-card,
+.refill-card,
+.transfer-card,
+.insurance-card,
+.contact-card {
+    padding: 20px;
+}
+
+/* Card text */
+.service-card h3,
+.resource-card h3,
+.refill-card h3,
+.transfer-card h3,
+.insurance-card h3,
+.contact-card h3 {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.service-card p,
+.resource-card p {
+    margin-bottom: 10px;
+}
+
+/* Split content sections */
+.split {
+    gap: 30px;
+}
+
+.split h2,
+.section-contact h2 {
+    margin-bottom: 12px;
+}
+
+/* About section graphic */
+.about-graphic {
+    min-height: 200px;
+}
+
+/* Other page hero sections */
+.about-hero,
+.services-hero,
+.refills-hero,
+.transfers-hero,
+.insurance-hero,
+.contact-hero,
+.privacy-hero {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+/* Main content sections */
+.about-content,
+.services-section,
+.refills-section,
+.transfers-section,
+.transfers-info,
+.insurance-section,
+.insurance-details,
+.contact-section,
+.contact-directions,
+.privacy-content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/* Call-to-action sections */
+.services-cta,
+.refills-help,
+.transfers-cta,
+.insurance-cta,
+.insurance-notice,
+.contact-notice {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Content headings and introductions */
+.services-section h2,
+.refills-section h2,
+.transfers-section h2,
+.insurance-section h2,
+.contact-section h2 {
+    margin-bottom: 15px;
+}
+
+.refills-intro,
+.transfers-intro,
+.insurance-intro,
+.contact-intro {
+    margin-bottom: 18px;
+}
+
+/* Lists of cards and steps */
+.resource-grid,
+.insurance-steps {
+    margin-top: 18px;
+}
+
+.insurance-step {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+/* Homepage insurance card */
+.insurance-home-card {
+    padding: 22px;
+}
+
+/* Contact details */
+.contact-panel {
+    padding: 20px;
+}
+
+/* Footer */
+.site-footer {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/* Mobile and tablet spacing */
+@media (max-width: 900px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .hero-grid {
+        min-height: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        gap: 16px;
+    }
+
+    .hero .hero-art {
+        min-height: 200px;
+        height: auto;
+    }
+
+    .split,
+    .contact-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .hero-grid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 10px;
+    }
+
+    .hero .hero-art {
+        min-height: 170px;
+        height: auto;
+        margin: 0;
+    }
+
+    .service-card,
+    .resource-card,
+    .refill-card,
+    .transfer-card,
+    .insurance-card,
+    .contact-card {
+        padding: 16px;
+    }
+
+    .about-hero,
+    .services-hero,
+    .refills-hero,
+    .transfers-hero,
+    .insurance-hero,
+    .contact-hero,
+    .privacy-hero {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .about-content,
+    .services-section,
+    .refills-section,
+    .transfers-section,
+    .transfers-info,
+    .insurance-section,
+    .insurance-details,
+    .contact-section,
+    .contact-directions,
+    .privacy-content {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+
+/* ==========================================
+   EXTRA COMPACT WEBSITE LAYOUT
+   Original font sizes, much less scrolling
+   ========================================== */
+
+/* Reduce spacing between major sections */
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Homepage hero */
+.hero-grid {
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.hero .hero-art {
+    min-height: 180px;
+    height: auto;
+}
+
+/* Heading and paragraph spacing */
+.eyebrow {
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+}
+
+.hero .lead,
+.hero .hero-description {
+    margin-bottom: 10px;
+}
+
+.hero-note {
+    margin-top: 8px;
+}
+
+.section-heading {
+    margin-bottom: 5px;
+}
+
+.section-intro {
+    margin-bottom: 12px;
+}
+
+/* Cards */
+.cards,
+.services-grid,
+.refills-grid,
+.transfers-grid,
+.insurance-grid,
+.contact-grid,
+.resource-grid {
+    gap: 12px;
+}
+
+.service-card,
+.resource-card,
+.refill-card,
+.transfer-card,
+.insurance-card,
+.contact-card {
+    padding: 15px;
+}
+
+.service-card h3,
+.resource-card h3,
+.refill-card h3,
+.transfer-card h3,
+.insurance-card h3,
+.contact-card h3 {
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.service-card p,
+.resource-card p {
+    margin-bottom: 8px;
+}
+
+/* Icons */
+.card-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.service-icon,
+.insurance-icon,
+.contact-icon {
+    margin-bottom: 8px;
+}
+
+/* About and information sections */
+.split {
+    gap: 20px;
+}
+
+.split h2,
+.section-contact h2 {
+    margin-bottom: 8px;
+}
+
+.about-graphic {
+    min-height: 160px;
+}
+
+/* All inside-page banners */
+.about-hero,
+.services-hero,
+.refills-hero,
+.transfers-hero,
+.insurance-hero,
+.contact-hero,
+.privacy-hero {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+/* All inside-page content */
+.about-content,
+.services-section,
+.refills-section,
+.transfers-section,
+.transfers-info,
+.insurance-section,
+.insurance-details,
+.contact-section,
+.contact-directions,
+.privacy-content {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+/* Call-to-action sections */
+.services-cta,
+.refills-help,
+.transfers-cta,
+.insurance-cta,
+.insurance-notice,
+.contact-notice {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Smaller gaps between headings and cards */
+.refills-intro,
+.transfers-intro,
+.insurance-intro,
+.contact-intro {
+    margin-bottom: 12px;
+}
+
+.resource-grid,
+.insurance-steps {
+    margin-top: 12px;
+}
+
+.insurance-step {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Contact and homepage panels */
+.contact-panel,
+.insurance-home-card {
+    padding: 15px;
+}
+
+/* Footer */
+.site-footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+    .section {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .hero-grid {
+        min-height: 0;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        gap: 12px;
+    }
+
+    .hero .hero-art {
+        min-height: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .hero-grid {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        gap: 8px;
+    }
+
+    .hero .hero-art {
+        min-height: 140px;
+        height: auto;
+        margin: 0;
+    }
+
+    .service-card,
+    .resource-card,
+    .refill-card,
+    .transfer-card,
+    .insurance-card,
+    .contact-card {
+        padding: 12px;
+    }
+
+    .about-hero,
+    .services-hero,
+    .refills-hero,
+    .transfers-hero,
+    .insurance-hero,
+    .contact-hero,
+    .privacy-hero {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .about-content,
+    .services-section,
+    .refills-section,
+    .transfers-section,
+    .transfers-info,
+    .insurance-section,
+    .insurance-details,
+    .contact-section,
+    .contact-directions,
+    .privacy-content {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+}
+
+
+/* ==========================================
+   REDUCE ALL HEADINGS BY 25%
+   H1, H2, H3, H4, H5, H6
+   ALL WEBSITE PAGES
+   ========================================== */
+
+/* Default headings */
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.125em;
+}
+
+h3 {
+    font-size: 0.8775em;
+}
+
+h4 {
+    font-size: 0.75em;
+}
+
+h5 {
+    font-size: 0.6225em;
+}
+
+h6 {
+    font-size: 0.5025em;
+}
+
+/* Homepage main heading */
+.hero h1 {
+    font-size: clamp(31.5px, 3.975vw, 52.5px);
+}
+
+/* Main headings on other pages */
+.about-hero h1,
+.services-hero h1,
+.refills-hero h1,
+.transfers-hero h1,
+.insurance-hero h1,
+.contact-hero h1,
+.privacy-hero h1 {
+    font-size: clamp(1.5rem, 3.75vw, 2.25rem);
+}
+
+/* Homepage section headings */
+.section-heading,
+.split h2,
+.section-contact h2 {
+    font-size: clamp(21.75px, 3vw, 30px);
+}
+
+/* Section headings on all inside pages */
+.services-section h2,
+.refills-section h2,
+.transfers-section h2,
+.transfers-info h2,
+.insurance-section h2,
+.insurance-details h2,
+.contact-section h2,
+.contact-directions h2 {
+    font-size: 1.5rem;
+}
+
+/* Privacy section headings */
+.privacy-content h2 {
+    font-size: 1.05rem;
+}
+
+/* All card headings */
+.service-card h3,
+.resource-card h3 {
+    font-size: 15px;
+}
+
+/* Mobile homepage heading */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32.25px;
+    }
+}
+
+
+/* CENTER THE WE'RE HERE TO HELP CONTACT BOX */
+
+.section-contact .contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 15px auto 0;
+}
+
+.section-contact .contact-panel {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .section-contact .contact-grid {
+        width: 100%;
+        padding: 0;
+    }
+
+    .section-contact .contact-panel {
+        max-width: 100%;
+    }
+}
+
+/* =====================================
+   PHARMACY NAME AND TAGLINE IN HEADER
+   ===================================== */
+
+/* Increase pharmacy name by 25% */
+.site-header .brand strong {
+    font-size: 21.25px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+/* Keep tagline smaller */
+.site-header .brand small {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #d7e8f3;
+    margin-top: 4px;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .site-header .brand strong {
+        font-size: 17.5px;
+    }
+
+    .site-header .brand small {
+        font-size: 8px;
+    }
+}
+
